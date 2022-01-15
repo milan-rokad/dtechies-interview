@@ -1,0 +1,30 @@
+@import '../../../../assets/css/variable.scss';
+
+.content-container {
+	.statics-circle {
+		height: 8rem;
+		width: 8rem;
+		border: 10px solid $light-gray;
+	}
+	.heading {
+		font-size: 2rem;
+	}
+	.sub-heading {
+		font-size: 1rem;
+		color: $gray;
+	}
+
+	.add-border {
+		position: relative;
+		&:after {
+			content: '';
+			background: $med-gray;
+			position: absolute;
+			top: 10%;
+			bottom: 10%;
+			left: 0;
+			height: 70%;
+			width: 3px;
+		}
+	}
+}
